@@ -1,0 +1,68 @@
+body{
+	font-family: helvetica;
+}
+
+ul[data-role="searchResultItem-label"],
+ul[data-name-notisTitleList="notisTitleList"]{
+    margin : 0;
+    padding-left: 0;
+}
+
+ul[data-role="searchResultItem-label"] li{
+    list-style-type : none;
+}
+
+ul[data-role="searchResultItem-label"] input{
+    display : none;
+}
+
+
+li[data-name-notisDate="notisDate"]{
+	font-size: small;
+	margin: 1.5%;
+	color: grey;
+}
+
+li[data-name-notisTitle="notisTitle"]{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-bottom: 1.5%;
+	margin-left: 1.5%;
+	color: black;
+	font-size: large;
+}
+
+li[data-name-notisTags="notisTags"]{
+	color: grey;
+	display: inline;
+	padding: 0.3em;
+	margin: 1%; 
+	background-color: #D9E9F5;
+	border-radius: 0.5em;
+	font-size: small;
+}
+
+
+ul[data-name-tagList="tagsList"]{
+	padding: 0;
+	margin-top: 3%;
+}
+
+
+/*.list-group-item{
+	
+}
+*/
+label[data-role="searchResultItem-label"]:hover {
+  	box-shadow: 0 0 5px 0 lightblue;
+}
+
+label[data-role="searchResultItem-label"] {
+	position: relative;
+	cursor: pointer;
+    display : block;
+    color : gray;
+    padding-bottom: 1%;
+    margin-bottom: 5%;
+}

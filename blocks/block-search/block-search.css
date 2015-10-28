@@ -1,0 +1,23 @@
+/*ul[data-role="tag-label"] {
+    margin : 0;
+    padding : 1em 1em;
+}
+
+ul[data-role="tag-label"] li{
+    list-style-type : none;
+}*/
+
+
+.list-group-item{
+	padding: 1% 5%;
+	border: none;
+}
+
+label[data-role="tag-label"] {
+    display : block;
+    color : gray;
+}
+
+label[data-role="tag-label"]:hover {
+    color : black;
+}

@@ -1,0 +1,29 @@
+/*div[data-role="noticeEditor"] input{
+    display : block;
+    width : 98%;
+    margin : 1%;
+}
+*/
+/*div[data-role="noticeEditor"] textarea{
+    display : block;
+    width : 98%;
+    margin : 1%;
+    height : 30em;
+}
+
+div[data-role="noticeEditor"] button{
+    margin : 1%;
+}*/
+
+.form-group, .form-group{
+	width: 98%;
+	margin: 1%;
+}
+
+input[data-notice-editor="tags"]{
+	margin-top: 1%; 
+}
+
+.btn-info{
+	margin: 2%;
+}

@@ -1,0 +1,75 @@
+/*body, html {
+    padding : 0;
+    margin : 0;
+}
+
+.column[data-role="search"] {
+    left : 0;
+    width : 20%;
+}
+
+.column[data-role="searchResult"] {
+    left : 20%;
+    width : 30%;
+}
+
+.column[data-role="noticeCont"] {
+    left : 50%;
+    width : 50%;
+    border-right : none;
+}
+
+*/
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+div[class^="col-"]{
+    padding: 0;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+
+.column {
+   /* position : absolute;
+    display : inline-block;*/
+    box-sizing : content-box;
+    border-right : 1px solid #AFD0E0;
+    height : 100%;
+    overflow : auto;
+
+}
+
+div[role="settings"]{
+    /*visibility: hidden;*/
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right : 1px solid #AFD0E0;
+    width: 10%;
+    height: 100%;
+}
+
+li[data-name="listSettings"]{
+    padding: 10%;
+    margin: 2%;
+    height: 7%;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+span[class^="glyphicon"]{
+    font-size: large;
+    color: white;
+}
+

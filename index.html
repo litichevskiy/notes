@@ -1,0 +1,97 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>notis</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./index.css"/>
+    <link rel="stylesheet" type="text/css" href="./blocks/block-search/block-search.css"/>
+    <link rel="stylesheet" type="text/css" href="./blocks/block-notice_editor/block-notice_editor.css"/>
+    <link rel="stylesheet" type="text/css" href="./blocks/block-search_results/block-search_results.css"/>
+</head>
+	<body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-lg-3 col-xs-3">
+                    <div class="column" data-role="search"></div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-lg-3 col-xs-3">
+                    <div class="column" data-role="searchResult"></div>
+                </div>
+                <div class="col-md-6 col-sm-3 col-lg-6 col-xs-6">
+                   <div class="column" data-role="noticeCont"></div>
+                </div>
+            </div>
+        </div>
+
+        <div role="settings">
+            <ul class="list-unstyled">
+                <li data-name="listSettings"><button data-name="close" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-remove"></span></button></li>
+                <li data-name="listSettings"></li>
+                <li data-name="listSettings"></li>
+                <li data-name="listSettings"></li>
+                <li data-name="listSettings"></li>
+            </ul>
+        </div>
+
+
+    	 <script type="template" data-template-name="tag">
+        <li class="list-group-item">
+            <label data-role="tag-label">
+                <input type="checkbox" data-tag-name="%%TAG_NAME%%" %%CHECKED%%>
+                    <span>%%TAG_NAME%%</span>
+            </label>
+        </li>
+    </script>
+
+	    <script type="template" data-template-name="searchResultItem">
+	        <li>
+            <label data-role="searchResultItem-label">
+                <input type="radio" name="checkedNoticeId" data-notice-id="%%NOTICE_ID%%" %%CHECKED%%>
+                <ul data-name-notisTitleList="notisTitleList">
+                	<li data-name-notisDate="notisDate">%%DATE%%</li>
+                    <li data-name-notisTitle="notisTitle">%%TITLE%%</li>
+                    <li>
+                    	<ul data-name-tagList="tagsList">%%TAGS%%</ul>
+                    </li>
+                </ul>
+            </label>
+        </li>
+	    </script>
+
+	    <script type="template" data-template-name="searchResultTagsList">
+	    	<li data-name-notisTags="notisTags">%%TAG%%</li>
+	    </script>
+
+	    <script type="template" data-template-name="noticeEditor">
+	        <form role="form">
+                <div class="form-group">
+	               <input type="hidden" data-notice-editor="id" value="%%ID%%"/>
+	               <input type="hidden" data-notice-editor="date" value="%%DATE%%"/>
+	               <input type="text" class="form-control" data-notice-editor="title" placeholder="title" value="%%TITLE%%"/>
+	               <input type="text" class="form-control" data-notice-editor="tags" placeholder="tags comma separated" value="%%TAGS%%"/>
+                </div>   
+                <div class="form-group">   
+                   <textarea class="form-control" rows="18" data-notice-editor="content" placeholder="notis content">%%CONTENT%%</textarea>
+                   <button data-name="settings" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-cog"></span></button>
+                   <button type="submit" class="btn btn-info btn-sm">Save</button>
+                </div>   
+	        </form>
+	    </script>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>    
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/templator.js"></script>
+    <script src="./js/events.js"></script>
+    <script src="./js/abstract_storage_localStorage.js"></script>
+    <script src="./js/intersection.js"></script>
+    <script src="./js/indexedStorage.js"></script>
+    <script src="./blocks/block-search/block-search.js"></script>
+    <script src="./blocks/block-search_results/block-search_results.js"></script>
+    <script src="./blocks/block-notice_editor/block-notice_editor.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/settings.js"></script> 
+	</body>
+</html>
+
